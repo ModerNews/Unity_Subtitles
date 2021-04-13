@@ -5,13 +5,13 @@ using UnityEngine;
 public class NewDialogue : MonoBehaviour
 {
 
-    public string Filename;
+    public string Filename = "TestDialogue";
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            DialogueManager.Instance.DialogueStart();
+            DialogueManager.Instance.DialogueStart(Filename);
         }
     }
 }
